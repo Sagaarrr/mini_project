@@ -23,6 +23,7 @@ const getUserByName = async (req, res) => {
 
 const insertUser = async (req, res) => {
   try {
+      console.log("hello");
     let userData = req.body;
     let instance = new userM(userData);
     let ans = await instance.save();
